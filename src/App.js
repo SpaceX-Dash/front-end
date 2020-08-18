@@ -1,32 +1,17 @@
-import React, {useState , useEffect} from 'react';
+import React from 'react';
 import './App.css';
-
-// 3rd party libs
-import axios from "axios"
+import LaunchCard  from './components/Launches/LaunchCard';
+import NavBar from './components/navbar/NavBar';
+import PastLaunches from './components/Launches/PastLaunches';
 
 
 function App() {
-  //     value   fn
-  const [launchData, setLaunchData] = useState()
-
-  useEffect(() => {
-    axios("http://localhost:3001/nextLaunch")
-    .then(res => {
-      setLaunchData(res.data);
-      // console.log(res.data)
-    })
-    .catch(err => console.log(err))
-  },[])
-
-
-  if(!launchData){
-    return(<h1>Loading...</h1>)
-  }
 
   return (
     <div className="App">
-      <h2>Flight Number {launchData.flight_number}</h2>
-      <p>{launchData.details}</p>
+      <NavBar/>
+      <LaunchCard/>
+      <PastLaunches/>
     </div>
   );
 }
