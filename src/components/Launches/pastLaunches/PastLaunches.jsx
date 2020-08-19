@@ -1,7 +1,7 @@
 import React, {useState , useEffect}  from 'react';
 
 import axios from 'axios';
-import PastLaunchCard from './PastLaunchCard';
+import PastLaunchCard from './pastLaunchCard/PastLaunchCard';
 
 function PastLaunches() {
     const [pastLaunchData, setPastLaunchData] = useState();

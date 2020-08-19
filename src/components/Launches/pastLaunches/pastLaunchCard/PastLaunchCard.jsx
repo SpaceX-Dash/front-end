@@ -1,5 +1,4 @@
 import React from 'react';
-import LaunchCard from './LaunchCard';
 
 function PastLaunchCard(props) {
     console.log("FROM PASTLAUNCHES... ", props.launchData);
