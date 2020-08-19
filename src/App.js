@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import LaunchCard  from './components/Launches/LaunchCard';
 import NavBar from './components/navbar/NavBar';
 import PastLaunches from './components/Launches/PastLaunches';
