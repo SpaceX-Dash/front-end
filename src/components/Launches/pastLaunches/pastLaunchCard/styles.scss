@@ -1,0 +1,29 @@
+.PastLaunchCard {
+    height: 350px;
+    width: 350px;
+    background-color: grey;
+    border-radius: 5%;
+}
+
+.container-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.container-top img {
+    text-align: right;
+    height: 50px;
+    width: 50px;
+}
+
+.container-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    width: 250px;
+}
