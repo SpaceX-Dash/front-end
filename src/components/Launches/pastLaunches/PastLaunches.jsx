@@ -1,4 +1,5 @@
 import React, {useState , useEffect}  from 'react';
+import './styles.scss';
 
 import axios from 'axios';
 import PastLaunchCard from './pastLaunchCard/PastLaunchCard';
