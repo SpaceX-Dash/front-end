@@ -6,7 +6,7 @@ import PastLaunchCard from './pastLaunchCard/PastLaunchCard';
 
 function PastLaunches() {
     const [pastLaunchData, setPastLaunchData] = useState();
-    const [limit, setLimit] = useState(0);
+    const [limit, setLimit] = useState(30);
 
     useEffect(() => {
     axios.get(`http://localhost:3001/pastLaunches/${limit}`) 
