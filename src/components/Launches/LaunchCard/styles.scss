@@ -1,12 +1,19 @@
 .LaunchCard {
-    background-color: #146ca4;
+    background-image: url('https://external-preview.redd.it/A3leQBpE2GoBUfS9HToAH5rNeoGJDkHtJURoyo6Qyf0.jpg?auto=webp&s=fd038ee41a155e9d36cf782b22031666bbc505ea');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0px;
+
+    
 }
 
 .launch-date {
-    color: red;
+    color: #ff0f0f;
+    font-weight: 700;
 }
 
 .details {
     padding: 20px 20px;
+    background-color: #33333360; 
+
 }
