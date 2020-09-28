@@ -4,8 +4,10 @@ function NavBar() {
 
     return (
         <div className="NavBar">
-            <h1> NavBar </h1>
+            <h1> Starlink Launch </h1>
         </div>
+
+        
     )
 }
 

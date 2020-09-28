@@ -20,6 +20,9 @@ function LaunchCard() {
     if(!launchData){
       return(<h1>Loading...</h1>)
     }
+
+    console.log("THE NEXT ONE..." + launchData);
+    
   
     return (
       <div className="LaunchCard">
