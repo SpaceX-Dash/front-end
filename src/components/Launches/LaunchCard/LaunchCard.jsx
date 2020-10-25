@@ -21,6 +21,36 @@ function LaunchCard() {
       return(<h1>Loading...</h1>)
     }
 
+    var checkLaunchDate = function(firstDate, secondDate) {
+      if (firstDate < secondDate) {    
+        return true;
+      }
+
+      return false;
+    };
+
+    const launchDate = launchData.launch_date_local.slice(0, 10).replaceAll('-','');
+
+    const today = new Date();
+    const todayYear = today.getFullYear(); 
+    let todayMonth = (today.getMonth()+1); 
+    const todayDay = today.getDate();
+    
+    if (todayMonth < 10) {
+       todayMonth = '0' + todayMonth;
+    }
+
+    const formatToday = todayYear + "" + todayMonth + "" + todayDay;
+   
+    if(checkLaunchDate(launchDate, formatToday)) {
+      return (
+        <div className="LaunchCard">
+          <h1>Oppsie POSTMAN SPACE X is returning an error</h1>
+          <h2>The information for the next Launch should be updated soon</h2>
+        </div>
+      )
+    }
+
     console.log("THE NEXT ONE..." + launchData);
     
   
