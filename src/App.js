@@ -1,10 +1,9 @@
 import React from 'react';
 import './App.scss';
-import LaunchCard  from './components/Launches/LaunchCard/LaunchCard.jsx';
 import NavBar from './components/navbar/NavBar';
-import PastLaunches from './components/Launches/pastLaunches/PastLaunches';
 import PastLaunchesFull from './components/Launches/pastLaunches/pastLaunchesFull/PastLaunchesFull';
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
+import Home from './components/Views/Home/Home';
 
 
 function App() {
@@ -14,14 +13,11 @@ function App() {
     <div className="App">
       <NavBar/>
       <Switch>
-      <Route exact path="/">
-        <LaunchCard/>
-        <PastLaunches/>
-      
-      </Route>
-      <Route path="/pastLaunchFull">
+      <Route path="/pastLaunchesFull/:id">
           <PastLaunchesFull/>
       </Route>
+      <Route exact path="/" component={Home}/>
+
       </Switch>
     </div>
     </Router>
