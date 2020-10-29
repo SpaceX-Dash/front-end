@@ -15,16 +15,25 @@ function PastLaunchesFull(s) {
                 console.log(res.data)
             })
         },[])
+
+        
     
         console.log(flightNumber);
+
+
         if(!flightNumber) return <h1> Loading.... </h1>
 
     return (
-    <div>
-        <h1>Past Full Page render </h1>
-        <p>now we got this </p>
-        <a href={flightNumber.links.article_link}>Article Link</a>
-    </div>
+        <div>
+            <h1 id="mission-name">{flightNumber.mission_name} </h1>
+            <div>
+            <img src={flightNumber.links.mission_patch} alt="" height="150" width="150"></img>
+            </div>
+            <p>Flight Number : {flightNumber.flight_number} </p>
+            <div>{flightNumber.details}</div>
+            <a href={flightNumber.links.article_link}>Article Link</a>
+
+        </div>
     );
 
 
